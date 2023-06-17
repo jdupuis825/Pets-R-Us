@@ -1,0 +1,24 @@
+{
+  "name": "pets-r-us",
+  "version": "1.0.0",
+  "description": "Repo for Pets-R-Us web 340 project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jocelyn Dupuis",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdupuis825/Pets-R-Us.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jdupuis825/Pets-R-Us/issues"
+  },
+  "homepage": "https://github.com/jdupuis825/Pets-R-Us#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
