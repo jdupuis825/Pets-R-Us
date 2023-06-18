@@ -1,0 +1,185 @@
+/**
+    Title: site.css
+    Author: Jocelyn Dupuis
+    Date: 06/17/2023
+    Description: Styling for Pets-R-Us website
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+    color: #808080;
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+
+body {
+    display: block;
+}
+
+header {
+    padding: 15px 45px;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #f5f5f5;
+    z-index: 2;
+}
+
+h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+    display: block;
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #f5f5f5
+}
+
+nav {
+    display: flex;
+    margin-left: 15px;
+    list-style: none;
+}
+
+.menu {
+    color:#f5f5f5;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu-dropdown {
+    color: #000000;
+    background-color: lightseagreen;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    padding: 10px 14px;
+    z-index: 1;
+}
+
+ul {
+    list-style: disc;
+    display: block;
+}
+
+li {
+    text-align: left;
+    display: list-item;
+}
+
+.info {
+    padding: 10px;
+}
+
+section {
+    padding: 45px 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.mission {
+    color:#f5f5f5;
+    text-align: center;
+    position: relative; 
+    justify-content: center;
+}
+
+.mission .background-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(../public/images/mission-image);
+    background-size: cover;
+    z-index: -1;
+}
+
+.mission .grooming-background-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(../public/images/groomed-dog);
+    background-size: cover;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.mission-statement {
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.card-info {
+    padding: 20px;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+
+.card-content {
+    padding: 2px 16px;
+}
+
+.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonials .testimonial {
+    font-size: 16px;
+}
+
+.testimonials .customer {
+    font-size: 12px;
+}
+
+.testimonials img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+footer {
+    color:lightseagreen;
+    background-color: #808080;
+    padding: 10px 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
