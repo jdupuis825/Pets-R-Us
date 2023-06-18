@@ -1,0 +1,45 @@
+<!--
+    Title: header.ejs
+    Author: Jocelyn Dupuis
+    Date: 06/16/2023
+    Description: Header for Pets-R-Us website
+-->
+
+
+<!--To set the document type and language-->
+<!DOCTYPE html>
+<html lang="en">
+
+  <!--Gives page a title, links stylesheets and Google font kit to page-->
+  <head>
+    <!--Links: title, stylesheets, JavaScript, and Google Fonts-->
+    <title>Pets-R-Us: Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/site.css" type="text/css"  rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <h2><a href="/">Treat your fur babies today!</a></h2>
+        // Navigation for services and pages in website
+        <nav>
+            <div class="menu" style="padding-right: 15px;">
+                <span>Services</span>
+                <div class="menu-dropdown" style="font-size: 12px;">
+                    <br>
+                    <li><a href="/boarding" style="color: orange">Boarding</a></li>
+                    <br>
+                    <li><a href="/grooming" style="color: orange">Grooming</a></li>
+                    <br>
+                    <li><a href="/training" style="color: orange">Training</a></li>
+                    <br>
+                </div>
+            </div>
+            <li><a href="/customers" style="color: orange">Customers</a></li>
+            <li><a href="/booking" style="color: orange">Booking</a></li>
+            <li><a href="/my-appointments" style="color: orange">My Appointments</a></li>
+        </nav>
+    </header>

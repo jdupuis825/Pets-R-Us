@@ -1,0 +1,112 @@
+<!--
+    Title: index.ejs
+    Author: Jocelyn Dupuis
+    Date: 06/16/2023
+    Description: Body of landing page for Pets-R-Us website
+-->
+
+// Displays header
+<%- include("header.ejs")  %>
+
+    // Displays mission statement in body of landing page
+    <section class="mission">
+        <div class="background-image"></div>
+        <div class="mission-statement">
+            <h1>Pets-R-Us</h1>
+            <h3>mission statement will go here</h3>
+            <!--sign up here option-->
+        </div>
+    </section>
+    // Displays Location Hours 
+    <section class="about">
+        <h3 class="title">About Pets-R-Us</h3>
+        <p>
+            Here at Pets-R-Us, our main priority is providing the absolute best care for every single animal that comes through our doors. We pride ourselves in loving all animals: big, small, goofy, timid, dog, cat, and any friends in between. This standard of love shows through our staff's continuous training, certifications, and overall care that goes into each and every service we provide. 
+        </p>
+        <br>
+        <p>
+            Pets-R-Us offers a variety of services: boarding, grooming, and training. The process of setting up each service is easy for both you and your pet. Our facilities are top-notch, and we welcome you to come in and take a tour to see for yourself before scheduling any service. We know you will be truly blown away and feel confident in our abilities to provide the most excellent care for your beloved pet.  
+        </p>
+        <br>
+        <p>
+            We hope to make you and your family member(s) a part of our growing Pets-R-Us family.&#9829;
+        </p>
+        <div class="card-info">
+            <div class="card-title"><h4>Location Hours</h4></div>
+            <div class="card-content">
+                <ul>
+                    <li class="info">Sunday 9:00 AM - 5:00 PM</li>
+                    <li class="info">Monday 8:00 AM - 7:00 PM</li>
+                    <li class="info">Tuesday 8:00 AM - 7:00 PM</li>
+                    <li class="info">Wednesday 8:00 AM - 7:00 PM</li>
+                    <li class="info">Thursday 8:00 AM - 7:00 PM</li>
+                    <li class="info">Friday 8:00 AM - 7:00 PM</li>
+                    <li class="info">Saturday 9:00 AM - 5:00 PM</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="locations">
+        <h3 class="locations-title">Locations</h3>
+        <p>We're committed to providing the best service for all the animals in the Triple Cities and surrounding areas. We hope to expand to cover more areas throughout the Southern Tier, so keep an eye out in the near future!</p>
+        <hr>
+        <ul class="grid">
+            <li>
+                <h4>Johnson City</h4>
+                <p>123 Main Street, Johnson City, NY 13790</p>
+                <hr>
+                <h4>Binghamton</h4>
+                <p>456 Upper Front Street, Binghamton NY 13905</p>
+                <hr>
+                <h4>Vestal</h4>
+                <p>789 Vestal Parkway, Vestal NY 13850</p>
+            </li>
+            <li class="left-align">
+            <div class="dotw-card">
+                <div class="card-title">Dog of the Week</div>
+                <div class="background-dotw-image">
+                <div class="card-content dotw">
+                    <p>Name: Keyser</p>
+                    <p>Age: 10 years young</p>
+                    <p>Breed: Rednose Pitbull</p>
+                    <p>Likes: Cuddles, toys, the pool, and ice cream!</p>
+                    <p>Dislikes: Cheap jello</p>
+                </div>
+                </div>
+            </div>
+            </li>
+        </ul>
+    </section>
+    <section class="testimonials">
+        <h3 class="title">Customer Testimonials</h3>
+        <hr>
+        <img src="../public/images/testimonial1.jpg" alt="Testimonial 1" />
+        <p class="testimonial">
+            "How could I not be happy when my best friends face radiates happiness like this when he gets home from a Pets-R-Us trip?!"
+        </p>
+        <p class="customer">-Jocelyn-</p>
+        <br>
+        <img src="../public/images/testimonial2.jpg" alt="Testimonial 2" />
+        <p class="testimonial">
+            "I love how extra beautiful my girl looks when her gets a nice fresh cut. Pets-R-Us does such an awesome job and uses the best products that makes her coat so soft and shiny."
+        </p>
+        <p class="customer">-Aric-</p>
+        <br>
+        <img src="../public/images/testimonial3" alt="Testimonial 3" />
+        <p class="testimonial">
+            "This is my main mans reaction when I tell him he's going to Pets-R-Us; he comes a running and is ready to go!!"
+        </p>
+        <p class="customer">-Brandi-</p>
+        <br>
+    </section>
+    <section class="contact-info">
+        <h3 class="title">Contact Us</h3>
+        <p>We look forward to hearing from you. Drop Us A Line Here!</p>
+        <form>
+            <input type="email" placeholder="Email">
+            <button class="btn btn-primary">Send</button>
+        </form>
+    </section>
+
+// Displays footer    
+<%- include("footer.ejs")  %>
