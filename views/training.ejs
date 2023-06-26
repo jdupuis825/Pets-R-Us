@@ -1,0 +1,89 @@
+<!--
+    Title: grooming.ejs
+    Author: Jocelyn Dupuis
+    Date: 06/24/2023
+    Description: Body of boarding page for Pets-R-Us website
+-->
+
+// Displays header
+<%- include("header.ejs")  %>
+
+// Displays mission statement in body of landing page
+    <section class="mission">
+        <div class="gooming-background-image"></div>
+        <div class="mission-statement">
+            <h1>Pets-R-Us</h1>
+            <h3>mission statement will go here</h3>
+            <!--sign up here option-->
+        </div>
+    </section>
+
+    <section>
+        <h3 class="title">Meet Our Trainer</h3>
+        <br>
+        <div class="grid" style="column-gap: 18px;">
+            <div class="card">
+                <div class="card-content">
+                    <img src="training.jpg" height="350" width="525">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title"><h4>William</h4></div>
+                <div class="card-content">
+                    <p>
+                        This is Pets-R-US trainer William. We couldn't be happier to have him apart of our team because he brings so much joy to his work. Under his belt she has a degree specifically in animal behavior and has over ten years of experience in dog training. 
+                    </p>
+                    <br>
+                    <p>
+                        He is trained to work with all types of dog breeds and all ages. William is a firm believer that it is never too early or too late for proper dog training. Your dog will walk away feeling more confident in themselves and you will be beyond proud of them!
+                    </p>
+                    <br>
+                    <p>
+                        Book an appointment with us today so we can work together to help make your furry friends the best they can be!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="title">Pricing</h3>
+        <br>
+        <div class="grid" style="column-gap: 18px;">
+            <div class="card">
+                <div class="card-title"><h4>Puppy</h4></div>
+                <div class="card-content">
+                    <ul>
+                        <li class="info">House Training: $50</li>
+                        <li class="info">Obedience: $60</li>
+                        <li class="info">Nutrition: $60</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title"><h4>Adolescence</h4></div>
+                <div class="card-content">
+                    <ul>
+                        <li class="info">Leash Walking: $60</li>
+                        <li class="info">Socialization: $70</li>
+                        <li class="info">nutrition: $25</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title"><h4>Adult</h4></div>
+                <div class="card-content">
+                    <ul>
+                        <li class="info">Impulse Control: $65</li>
+                        <li class="info">Manners: $65</li>
+                        <li class="info">Nutrition: $25</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<%- include("footer.ejs")  %>

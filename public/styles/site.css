@@ -173,6 +173,19 @@ p {
     margin-bottom: 10px;
 }
 
+section h3.title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: flex;
+    width: 100%;
+    flex-wrap: 90%;
+    justify-content: center;
+}
+
 footer {
     color:lightseagreen;
     background-color: #808080;

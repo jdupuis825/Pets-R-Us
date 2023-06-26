@@ -1,0 +1,58 @@
+<!--
+    Title: grooming.ejs
+    Author: Jocelyn Dupuis
+    Date: 06/24/2023
+    Description: Body of boarding page for Pets-R-Us website
+-->
+
+// Displays header
+<%- include("header.ejs")  %>
+
+// Displays mission statement in body of landing page
+    <section class="mission">
+        <div class="gooming-background-image"></div>
+        <div class="mission-statement">
+            <h1>Pets-R-Us</h1>
+            <h3>mission statement will go here</h3>
+            <!--sign up here option-->
+        </div>
+    </section>
+
+    <section>
+        <h3 class="title">Boarding</h3>
+        <p>
+            We provide boarding for your furry animals here are Pets-R-Us. We understand that life happens, and sometimes additional accommodations are need to house your animals. We pride ourselves in making sure that our boarding area is of pristine condition so that all animals are comfortable and well taken care of during their stay.  
+        </p>
+        <br>
+        <p>
+            We have indoor and outdoor areas so that animals are free to roam, play, and get the proper exercise in. The quality of life during their stay at Pets-R-Us is top priority and wouldn't never be less than the best. If you're on vacation, we want to assure you that your furry friend is as well.  
+        </p>
+        <br>
+        <p>
+            Below you find our prices for boarding based on stay lengths. Book at stay today with Pets-R-Us so while you're away you don't have to worry about where or who your pet is staying with. Feel free to stop in and take a tour of our top notch accommodations today!
+        </p>
+        <hr>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card-title"><h4>Pricing:</h4></div>
+                <div class="card-content">
+                    <h5>Less than a week</h5>
+                    <ul>
+                        <li class="info">1 dog: $50/night</li>
+                        <li class="info">2 dogs: $75/night</li>
+                        <li class="info">3 dogs: $100/night</li>
+                    </ul>
+                    <h5>More than a week</h5>
+                    <ul>
+                        <li class="info">1 dog: $40/night</li>
+                        <li class="info">2 dogs: $65/night</li>
+                        <li class="info">3 dogs: $90/night</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<%- include("footer.ejs")  %>
