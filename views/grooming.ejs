@@ -6,7 +6,7 @@
 -->
 
 // Displays header
-<%- include("header.ejs")  %>
+<%- include("partials/header.ejs")  %>
 
 // Displays mission statement in body of landing page
     <section class="mission">
@@ -14,7 +14,7 @@
         <div class="mission-statement">
             <h1>Pets-R-Us</h1>
             <h3>mission statement will go here</h3>
-            <!--sign up here option-->
+            <a href="/register" class="btn btn-primary">Register for a FREE account!</a>
         </div>
     </section>
 
@@ -43,10 +43,7 @@
                     <li class="info">Spa Day: $100-$200</li>
                 </ul>
             </div>
-<<<<<<< HEAD
     </section>
 
-<%- include("footer.ejs")  %>
-=======
-    </section>
->>>>>>> dd6de33faaaf3ea92eeedf832dceb4ac4ecbd997
+<%- include("partials/footer.ejs")  %>
+    

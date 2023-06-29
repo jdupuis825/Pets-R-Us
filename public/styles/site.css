@@ -117,6 +117,19 @@ section {
     margin-top: 100px;
 }
 
+.btn {
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #000000;
+    background-color: lightseagreen;
+}
+
 h1 {
     font-size: 50px;
     font-weight: bold;
@@ -173,7 +186,6 @@ p {
     margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
 section h3.title {
     text-align: center;
     font-weight: bold;
@@ -187,8 +199,6 @@ section h3.title {
     justify-content: center;
 }
 
-=======
->>>>>>> dd6de33faaaf3ea92eeedf832dceb4ac4ecbd997
 footer {
     color:lightseagreen;
     background-color: #808080;
