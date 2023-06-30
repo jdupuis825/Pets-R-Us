@@ -1,0 +1,48 @@
+<!--
+    Title: grooming.ejs
+    Author: Jocelyn Dupuis
+    Date: 06/24/2023
+    Description: Body of boarding page for Pets-R-Us website
+-->
+
+// Displays header
+<%- include("./partials/_header.ejs")  %>
+
+// Displays mission statement in body of landing page
+    <section class="mission">
+        <div class="gooming-background-image"></div>
+        <div class="mission-statement">
+            <h1>Pets-R-Us</h1>
+            <h3>mission statement will go here</h3>
+            <a href="/register" class="btn btn-primary">Register for a FREE account!</a>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="title">Registration Form</h3>
+        <div class="card">
+            <div class="card-content">
+                <div class="form">
+                    <form action="/register" method="post">
+                        <div class="form-field">
+                            <label for="customerId">CustomerId</label>
+                            <br>
+                            <input class="input" type="text" name="customerId" id="customerId" required autofocus>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <br>
+                            <input class="input" type="text" name="email" id="email" required>
+                        </div>
+
+                        <div class="form-field">
+                            <input class="btn btn-primary full-width" type="submit" value="Register Me!">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <%- include("./partials/_footer.ejs")  %>
