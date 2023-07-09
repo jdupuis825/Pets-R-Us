@@ -1,0 +1,35 @@
+<!--
+    Title: grooming.ejs
+    Author: Jocelyn Dupuis
+    Date: 07/09/2023
+    Description: Customer list page for Pets-R-Us website
+-->
+
+// Displays header
+<%- include("./partials/_header.ejs")  %>
+
+    // Displays mission statement in body of landing page
+    <section class="mission">
+        <div class="gooming-background-image"></div>
+        <div class="mission-statement">
+            <h1>Pets-R-Us</h1>
+            <h3>mission statement will go here</h3>
+            <a href="/register" class="btn btn-primary">Register for a FREE account!</a>
+        </div>
+    </section>
+
+    <section>
+        <h1>Customer List</h1>
+        <div class="customerListTable">
+            <ul>
+                <% customers.forEach(customer => { %>
+                    <li>
+                        <p><b>Username:</b> <%= customer.customerId %></p>
+                        <p><b>Email:</b> <%= customer.email %></p>
+                    </li>
+                <% }) %>
+            </ul>
+        </div>
+    </section>
+
+<%- include("./partial/_footer.ejs")  %>
