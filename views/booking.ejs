@@ -1,0 +1,56 @@
+<!--
+    Title: grooming.ejs
+    Author: Jocelyn Dupuis
+    Date: 06/24/2023
+    Description: Body of boarding page for Pets-R-Us website
+-->
+
+// Displays header
+<%- include("./partials/_header.ejs")  %>
+
+    <section>
+        <h3>Book your appointment today!</h3>
+        <div class="card">
+            <div class="card-content">
+                <div class="form">
+                    <form action="/booking" method="post">
+                        <div class="form-field">
+                            <label for="custFirstName">First Name</label>
+                            <br>
+                            <input type="text" class="input" name="custFirstName" id="custFirstName" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="custLastName">Last Name</label>
+                            <br>
+                            <input type="text" class="input" name="custLastName" id="custLastName" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="custId">Customer ID</label>
+                            <br>
+                            <input type="text" class="input" name="custId" id="custId" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="custEmail">Email</label>
+                            <br>
+                            <input type="text" class="input" name="custEmail" id="custEmail" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="servicee">Service</label>
+                            <br>
+                            <select class="drop-down-menu full width" name="service" id="service" required>
+                                <option value="grooming">Grooming</option>
+                                <option value="boarding">Boarding</option>
+                                <option value="training">Training</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <input type="submit" value="Book your appointment" class="btn btn-primary full width">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+// Displays footer
+<%- include("./partials/_footer.ejs")  %>
