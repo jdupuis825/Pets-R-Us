@@ -216,7 +216,7 @@ form {
 }
 
 .form-field {
-    padding: 18px;
+    padding: 16px;
 }
 
 .input {
@@ -229,6 +229,22 @@ form {
 
 label {
     cursor: default;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.drop-down-menu {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #808080;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+option {
+    display: block;
 }
 
 footer {
