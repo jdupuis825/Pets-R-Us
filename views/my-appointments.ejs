@@ -18,6 +18,69 @@
         </div>
     </section>
 
+    <section>
+        <h3 class="title">Look Up Appointment</h3>
+        <div class="card">
+            <div class="card-content" style="margin-top: 25px; margin-bottom: 25px;">
+                <div class="form">
+                    <div class="form-field">
+                        <label for="email">Your Email</label>
+                        <br>
+                        <input type="text" class="input" name="email" id="email" required>
+                    </div>
+
+                    <div class="form-field">
+                        <input type="submit" value="Search" id="search" class="btn btn-primary full width">
+                    </div>
+
+                    <div id="appointments"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+      // Prevents form from empty submission
+      e.preventDefault();
+
+      // Variable declared for email string 
+      const email = document.getElementById('email').value;
+
+      // Fetch statement to grab users appointment info based on their input
+      fetch(`/api/appointments/${email}`)
+              .then(res => res.json())
+              .then(data => {
+                //Declare a string to display an HTML table
+                let tableString = 
+                `<br /><h4 style="font-size: 32px; text-align: center; padding-bottom: 10px; 
+                font-weight: lighter">My Appointments</h4><table id="appointments" style="width: 70%;" 
+                class="table full-width"><tr><th>First name</th><th>Last name</th><th>Username</th><th>Service</th></tr>`;
+  
+                // Declares empty string for output 
+                let output = "";
+
+                // For statement for every appointment that matches user input
+                for (let appointment of data) {
+                  // Formatting for service string
+                  output = appointment.service.slice(1, -1);
+                  output = output.charAt(0).toUpperCase() + output.slice(1);
+
+                  // Table row for table string
+                  tableString += 
+                  `<tr><td>${appointment.firstName}</td><td>${appointment.lastName}</td><td>${appointment.userName}</td><td>${output}</td></tr>`;
+                }
+  
+                // Closes table 
+                tableString += `</table>`;
+  
+                // Displays table
+                document.getElementById('appointments').innerHTML = tableString;
+              });
+        })   
+
+    </script>
+
 
 
 
