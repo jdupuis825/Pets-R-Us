@@ -28,7 +28,7 @@ header {
     align-items: center;
     color: #f5f5f5;
     z-index: 2;
-    background: url(../public/images/mission-image.jpg);
+    background: lightseagreen;
 }
 
 h1 {
