@@ -28,7 +28,7 @@ header {
     align-items: center;
     color: #f5f5f5;
     z-index: 2;
-    background: url("../public/styles/mission-image.jpg");
+    background: url("../public/images/mission-image.jpg");
 }
 
 h1 {
@@ -78,7 +78,7 @@ nav {
 }
 
 .menu-dropdown {
-    color: #000000;
+    color: black;
     background-color: lightseagreen;
     display: none;
     position: absolute;
@@ -109,7 +109,7 @@ section {
 }
 
 .mission {
-    color:#f5f5f5;
+    color: #f5f5f5;
     text-align: center;
     position: relative; 
     justify-content: center;
@@ -119,7 +119,7 @@ section {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: url(../public/images/mission-image);
+    background-image: url(../public/images/mission-image.jpg);
     background-size: cover;
     z-index: -1;
 }
@@ -128,7 +128,7 @@ section {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: url(../public/images/groomed-dog);
+    background-image: url(../public/images/groomed-dog.jpg);
     background-size: cover;
     z-index: -1;
     top: 0;
