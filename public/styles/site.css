@@ -30,10 +30,26 @@ header {
     z-index: 2;
 }
 
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    color: orange;
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+
 h2 {
     font-size: 1.3em;
     font-weight: bold;
     display: block;
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: lighter;
+    text-align: center;
+    color: black;
     font-family: 'Oswald', Verdana, Arial, sans-serif;
 }
 
