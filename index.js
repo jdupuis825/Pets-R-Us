@@ -138,8 +138,7 @@ app.get('/api/appointments/:email', async (req, res) => {
       });
   });
   
-  // Sets the port and the console log
+  // Sets the port 
   app.listen(PORT, () => {
-    console.log(`Listening on port ${port}`);
-    console.log('Press Ctrl-C to terminate');
+    console.log('Application started and listening on PORT ' + PORT);
   });
